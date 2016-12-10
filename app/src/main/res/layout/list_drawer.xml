@@ -1,0 +1,207 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#f5f5f5">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fitsSystemWindows="false"
+        android:orientation="vertical">
+        <!---android:layout_gravity="end"-->
+
+        <include layout="@layout/header_drawer" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="16dp"
+            android:clickable="true"
+            app:mrl_rippleColor="#facccc"
+            app:mrl_rippleDuration="350"
+            app:mrl_rippleFadeDuration="75"
+            app:mrl_rippleHover="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/event"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="25dp"/>
+
+                <com.pixplicity.fontview.FontTextView
+                    style="@style/FontTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#505050"
+                    android:textSize="12dp"
+                    android:text="My Event" />
+
+            </LinearLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:clickable="true"
+            app:mrl_rippleColor="#facccc"
+            app:mrl_rippleDuration="350"
+            android:layout_marginTop="10dp"
+            app:mrl_rippleFadeDuration="75"
+            app:mrl_rippleHover="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/request"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"/>
+
+                <com.pixplicity.fontview.FontTextView
+                    android:id="@+id/title"
+                    style="@style/FontTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#505050"
+                    android:textSize="12dp"
+                    android:text="My Request" />
+
+            </LinearLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="16dp"
+            android:background="#e6e6e6"/>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:mrl_rippleColor="#facccc"
+            app:mrl_rippleDuration="350"
+            app:mrl_rippleFadeDuration="75"
+            app:mrl_rippleHover="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/about"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"/>
+
+                <com.pixplicity.fontview.FontTextView
+                    style="@style/FontTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#505050"
+                    android:textSize="12dp"
+                    android:text="About Us" />
+
+            </LinearLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:mrl_rippleColor="#facccc"
+            app:mrl_rippleDuration="350"
+            android:layout_marginTop="10dp"
+            app:mrl_rippleFadeDuration="75"
+            app:mrl_rippleHover="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/settings"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"/>
+
+                <com.pixplicity.fontview.FontTextView
+                    style="@style/FontTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#505050"
+                    android:textSize="12dp"
+                    android:text="Settings" />
+
+            </LinearLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            app:mrl_rippleColor="#facccc"
+            app:mrl_rippleDuration="350"
+            android:layout_marginTop="10dp"
+            app:mrl_rippleFadeDuration="75"
+            app:mrl_rippleHover="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/logout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="25dp"/>
+
+                <com.pixplicity.fontview.FontTextView
+                    style="@style/FontTextViewStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#505050"
+                    android:textSize="12dp"
+                    android:text="Log Out" />
+
+            </LinearLayout>
+
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

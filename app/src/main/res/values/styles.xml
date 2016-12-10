@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColor">#c6c6c6</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="FontTextViewStyle" parent="@android:style/TextAppearance.Widget.TextView">
+        <item name="pix_font">fonts/ProductSans.ttf</item>
+        <item name="pix_fontBold">fonts/Muli-Bold.ttf</item>
+        <item name="pix_fontItalic">fonts/Muli-Italic.ttf</item>
+        <item name="pix_fontBoldItalic">fonts/Muli-BoldItalic.ttf</item>
+    </style>
+
+    <style name="FontButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="pix_font">fonts/Arvo-Regular.ttf</item>
+        <item name="pix_fontBold">fonts/Arvo-Bold.ttf</item>
+        <item name="pix_fontItalic">fonts/Muli-Italic.ttf</item>
+        <item name="pix_fontBoldItalic">fonts/Muli-Italic.ttf</item>
+    </style>
+
+    <style name="ToolBarWithNavigationBack">
+        <item name="navigationIcon">@drawable/abc_ic_ab_back_mtrl_am_alpha</item>
+        <item name="android:drawableTint">#ffcb0a</item>
+    </style>
+
+    <style name="DexScrollImageViewStyle">
+        <item name="zoom">2.1</item>
+        <item name="angle">0</item>
+        <item name="drawer">scale|translate</item>
+        <item name="generator">base</item>
+        <item name="evaluator">scrollBased</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">180dp</item>
+    </style>
+
+</resources>

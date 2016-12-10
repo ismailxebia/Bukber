@@ -1,0 +1,10 @@
+> SplashScreen Activity
+> New About Us Activity -actvity_about.xml -AboutActivity.java
+> Add icon Mipmap 
+> Add 3 Icon on HDPI
+> Perbaikan di add.xml tanpa mengubah struktur awal
+> Set FAB new icon - android:src="@drawable/terbitkan"
+> tambahan menu LogOut di NavDrawer dengan id="logout"
+
+*di fragment_event.xml swipeUp menggunakan lib jelly min SDK19
+di fragment_attended.xml menggunakan lib dari google, (BELUM DI GANTI)

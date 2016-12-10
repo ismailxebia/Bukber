@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "developer.xebia.ismail.bukber"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:cardview-v7:23.3.0'
+    compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.0@aar'
+    compile 'com.github.rey5137:material:1.2.1'
+    compile 'com.pixplicity.letterpress:library:1.0'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.github.allan1st:JellyRefreshLayout:1.0.0'
+    compile 'com.rengwuxian.materialedittext:library:2.1.4'
+    compile 'com.nineoldandroids:library:2.4.0'
+
+    compile('com.github.florent37:androidparallax:1.0.1@aar') {
+        transitive = true
+    }
+    compile 'com.balysv:material-ripple:1.0.2'
+
+    compile 'it.dex.dexmovingimageview:dexmovingimageviewlib:0.1.0'
+    compile 'com.flaviofaria:kenburnsview:1.0.7'
+    compile 'com.facebook.android:facebook-android-sdk:4.0.0'
+}

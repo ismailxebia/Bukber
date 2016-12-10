@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pixplicity.fontview.FontTextView
+    style="@style/FontTextViewStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_text"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="?attr/selectableItemBackground"
+    android:gravity="center"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:textColor="@color/tab_cate"
+    android:textSize="14dp"
+    android:textAllCaps="true"
+/>
